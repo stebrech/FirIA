@@ -1,0 +1,384 @@
+/***************************************
+****************************************
+****************************************
+** Typography
+****************************************/
+
+p {
+  @include vertical_margins;
+
+  @media print {
+    /* Not supported by Webkit at time of writing, ref: https://bugs.webkit.org/show_bug.cgi?id=39735 */
+    widows: 2;
+    orphans: 2;
+  }
+}
+
+/* Indent the first line of sequential paragraphs, via the Indent Paragraph setting */
+.indent-paragraphs p + p {
+  margin-top: 0;
+  text-indent: 2em;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.subtitle {
+  border-top: 1px solid #000;
+  font-weight: 600;
+  padding-top: 1em;
+}
+
+
+/* -------------------------------------
+Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+ float: none;
+ line-height: 1.25;
+ @include vertical_margins;
+
+ @media print {
+   page-break-inside: avoid;
+   page-break-after: avoid; /* Not supported by Webkit at time of writing, ref: https://bugs.webkit.org/show_bug.cgi?id=5097 */
+ }
+}
+
+h1 {
+ font-size: 1.75em;
+ font-weight: 300;
+ margin-top: 2rem;
+
+ @media screen and (min-width: 30rem) {
+   margin-top: 3rem;
+ }
+
+ @media screen and (min-width: 40rem) {
+   font-size: 2em;
+   margin-top: 4rem;
+ }
+
+ @media screen and (min-width: 50rem) {
+   margin-top: 5rem;
+ }
+}
+
+h2 {
+  font-size: 1.25em;
+  font-weight: 600;
+  margin-top: 2rem;
+
+  @media screen and (min-width: 30rem) {
+    margin-top: 3rem;
+  }
+
+  @media screen and (min-width: 40rem) {
+    font-size: 1.5em;
+    margin-top: 4rem;
+  }
+
+  @media screen and (min-width: 50rem) {
+    margin-top: 5rem;
+  }
+}
+
+h3 {
+  font-size: 1.25em;
+  font-weight: 400;
+  margin-top: 2rem;
+
+  @media screen and (min-width: 30rem) {
+    margin-top: 3rem;
+  }
+
+  @media screen and (min-width: 40rem) {
+    font-size: 1.5em;
+    margin-top: 4rem;
+  }
+
+  @media screen and (min-width: 50rem) {
+    margin-top: 5rem;
+  }
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: 600;
+  margin-top: 1.5rem;
+
+  @media screen and (min-width: 30rem) {
+    margin-top: 2rem;
+  }
+
+  @media screen and (min-width: 40rem) {
+    font-size: 1.25em;
+    margin-top: 2.5rem;
+  }
+
+  @media screen and (min-width: 50rem) {
+    margin-top: 3rem;
+  }
+}
+
+h5 {
+  font-size: 1em;
+  font-weight: 400;
+  margin-top: 1.5rem;
+
+  @media screen and (min-width: 30rem) {
+    margin-top: 2rem;
+  }
+
+  @media screen and (min-width: 40rem) {
+    font-size: 1.25em;
+    margin-top: 2.5rem;
+  }
+
+  @media screen and (min-width: 50rem) {
+    margin-top: 3rem;
+  }
+}
+
+h6 {
+  font-size: .75em;
+  font-weight: 600;
+  margin-top: 1.5rem;
+
+  @media screen and (min-width: 30rem) {
+    margin-top: 2rem;
+  }
+
+  @media screen and (min-width: 40rem) {
+    font-size: 1em;
+    margin-top: 2.5rem;
+  }
+
+  @media screen and (min-width: 50rem) {
+    margin-top: 3rem;
+  }
+}
+
+ /* Subheading adjustments */
+ h1 + h2,
+ h2 + h3,
+ h3 + h4,
+ h5 + h6 {
+   margin-top: 0;
+ }
+
+/* Center h1-h6 headings, via the Centered Headings setting */
+.center-headings :-webkit-any(h1, h2, h3, h4, h5, h6) {
+  text-align: center;
+}
+
+/* Automatic Heading Numbering */
+/* Thanks to Phil Archer. http://philarcher.org/diary/2013/headingnumbers/ */
+
+.number-headings body {
+  counter-reset: h1;
+}
+
+.number-headings h1 {
+  counter-reset: h2;
+
+  &:before {
+    counter-increment: h1;
+    content: counter(h1) ". ";
+  }
+}
+
+.number-headings h2 {
+  counter-reset: h3;
+
+  &:before {
+    counter-increment: h2;
+    content: counter(h1) "." counter(h2) ". ";
+  }
+}
+.number-headings h3 {
+  counter-reset: h4;
+
+  &:before {
+    counter-increment: h3;
+    content: counter(h1) "." counter(h2) "." counter(h3) ". "
+  }
+}
+.number-headings h4 {
+  counter-reset: h5;
+
+  &:before {
+    counter-increment: h4;
+    content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) ". "
+  }
+}
+
+.number-headings h5 {
+  counter-reset: h6;
+
+  &:before {
+    counter-increment: h5;
+    content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". "
+  }
+}
+
+.number-headings h6 {
+
+  &:before {
+    counter-increment: h6;
+    content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". "
+  }
+}
+
+h1.nocount:before,
+h2.nocount:before,
+h3.nocount:before,
+h4.nocount:before,
+h5.nocount:before,
+h6.nocount:before {
+  content: "";
+  counter-increment: none
+}
+
+
+/* -------------------------------------
+Blockquotes */
+
+blockquote {
+  border-left: 6px solid $color_gray_bright;
+  color: $color_gray;
+  padding: 0 1em;
+  @include vertical_margins;
+  font-style: italic;
+
+  .night-mode & {
+    border-left: 6px solid $color_gray;
+    color: $color_gray;
+  }
+}
+
+
+/* -------------------------------------
+Links */
+
+a {
+  color: $color_primary;
+
+  .night-mode & {
+    color: $color_primary-bright;
+  }
+}
+
+@media print {
+  /* Underline for table of contents on printed pages */
+  .TOC a {
+    text-decoration: none;
+  }
+}
+
+
+/* -------------------------------------
+Footnotes */
+
+.footnotes {
+  font-size: .75em;
+  // @include vertical_margins;
+  margin-top: 3rem;
+  page-break-before: avoid;
+
+  @media (min-width: 40rem) {
+    margin-top: 5rem;
+  }
+
+  hr {
+    @include vertical_margins;
+    page-break-after: avoid;
+    width: 10rem;
+  }
+
+  p {
+    margin: 0 auto;
+  }
+}
+
+@media print {
+  /* Underline on superscript footnote number, which when clicked shows an error */
+  .footnote {
+    text-decoration: none;
+  }
+
+  /* Link which allows you to go back to the text from footnote—useless on a printed page */
+  .reversefootnote {
+    display: none;
+  }
+}
+
+/* Remove underline on .reversefootnote arrow for iOS, as it’s turned into an emoji */
+@media screen and (max-device-width: 1024px) {
+  .reversefootnote {
+    text-decoration: none;
+  }
+}
+
+
+/* -------------------------------------
+Code */
+
+code,
+pre,
+kbd {
+  background-color: $color_gray-bright;
+  border-color: $color_gray_bright;
+  border-radius: 2px;
+  color: $color_gray-darkest;
+  font-size: .9em;
+  white-space: pre-wrap;
+
+  .night-mode & {
+    background-color: $color_gray-dark;
+    border-color: $color_gray-dark;
+    color: $color_gray-brightest;
+  }
+}
+
+code,
+samp,
+kbd {
+  font-family: 'Fira Code', monospace;
+  font-weight: 400;
+}
+
+/* Prevent code line-height increasing heading line-height */
+:-webkit-any(h1, h2, h3, h4, h5, h6) > code, kbd {
+  line-height: normal;
+}
+
+pre {
+  @include vertical_margins;
+  overflow: hidden;
+}
+
+
+/* -------------------------------------
+Horizontal rule */
+
+hr {
+  clear: both;
+  border: 0;
+  border-bottom: 1px $color_gray-darkest solid;
+  @include vertical_margins;
+
+  .night-mode & {
+    border-bottom-color: $color_gray_brightest;
+  }
+
+  @media print {
+    border-bottom-color: #000 !important;
+  }
+}

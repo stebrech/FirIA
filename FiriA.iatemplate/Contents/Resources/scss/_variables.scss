@@ -1,0 +1,24 @@
+$color_gray-brightest: #f8f9fa;
+$color_gray-bright: #e9ecef;
+$color_gray: #adb5bd;
+$color_gray-dark: #495057;
+$color_gray-darkest: #212529;
+
+$color_primary: #1c7ed6;
+$color_primary-bright: #74c0fc;
+
+@mixin vertical_margins() {
+  margin: .75rem 0;
+
+  @media screen and (min-width: 30rem) {
+    margin: 1rem 0;
+  }
+
+  @media screen and (min-width: 40rem) {
+    margin: 1.25rem 0;
+  }
+
+  @media screen and (min-width: 50rem) {
+    margin: 1.5rem 0;
+  }
+}

@@ -1,0 +1,114 @@
+/***************************************
+****************************************
+****************************************
+* Lists
+***************************************/
+
+ul,
+ol {
+  margin: .5em 0 0 -2em;
+  padding: 0 0 0 1em;
+  position: relative;
+
+  li {
+    margin: .5em 0 0 1em;
+
+    ul,
+    ol {
+      margin: 0 0 0 -1em;
+
+      li {
+        margin: 0 0 0 1em;
+      }
+    }
+  }
+}
+
+ul {
+  list-style: none;
+
+  li::before {
+    content: "–";
+    margin-left: -1em;
+    position: absolute;
+  }
+}
+
+blockquote ol {
+  margin-left: -2em;
+}
+
+blockquote li {
+  margin-left: 2em;
+
+  &:before {
+    margin-left: -1em;
+  }
+}
+
+
+/* Task Lists */
+
+.task-list-item {
+
+  &::before {
+    content: "";
+  }
+
+  ol & {
+    padding-left: 1.5em;
+  }
+
+  .task-list-item-checkbox {
+    width: 1.5em;
+    height: 1em;
+    margin-left: -1.5em;
+    vertical-align: middle;
+    border: none; /* Otherwise iPhone draws a border */
+    background-image: url('assets/box.svg');
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+    background-color: transparent;
+    -webkit-print-color-adjust: exact; /* Prevents from hiding when printed */
+    -webkit-appearance: none; /* Disables system checkbox image */
+    opacity: 1.0; /* Otherwise they are 0.4 on iPhone, where it applies disabled effect even with above */
+
+    &:checked {
+      background-image: url('assets/check.svg');
+    }
+
+    .night-mode & {
+      background-image: url('assets/box-night-mode.svg');
+    }
+
+    .night-mode &:checked {
+      background-image: url('assets/check-night-mode.svg');
+    }
+  }
+}
+
+/* HACK: Prevent empty list items collapsing
+   Note this doesn’t work for paragraph lists, although we can fix via class or once has() is supported with: `ul li:not:has(p)::after` */
+ul li:empty::after,
+.task-list-item:last-child::after {
+  content: "";
+  display: inline-block;
+}
+
+dd {
+  -webkit-margin-start: 2.2222rem; /* ~40px for font-size: 18px. rem works better for RWD than % */
+  margin-start: 2.2222rem;
+}
+
+/* Remove vertical margins on nested lists */
+:-webkit-any(li, dt, dd, th, td) > :-webkit-any(ul, ol, dl) {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+/* Definition lists */
+
+dl {
+  @include vertical_margins;
+}
