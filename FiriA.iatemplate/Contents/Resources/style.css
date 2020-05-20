@@ -1038,6 +1038,9 @@ ol .task-list-item {
 .night-mode .task-list-item .task-list-item-checkbox:checked {
   background-image: url("assets/check-night-mode.svg");
 }
+.task-list-item p {
+  display: inline;
+}
 
 /* HACK: Prevent empty list items collapsing
    Note this doesn’t work for paragraph lists, although we can fix via class or once has() is supported with: `ul li:not:has(p)::after` */

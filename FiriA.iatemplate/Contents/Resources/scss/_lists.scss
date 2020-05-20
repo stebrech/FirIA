@@ -85,6 +85,10 @@ blockquote li {
       background-image: url('assets/check-night-mode.svg');
     }
   }
+
+  p {
+    display: inline;
+  }
 }
 
 /* HACK: Prevent empty list items collapsing
