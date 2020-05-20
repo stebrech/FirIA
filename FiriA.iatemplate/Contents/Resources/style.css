@@ -446,13 +446,13 @@ body > :first-child {
 }
 
 .footer {
-  margin: 1cm 2cm 0 3cm;
+  margin: .5cm 2cm 0 0;
   padding: 0;
   text-align: right;
 }
 
 .front {
-  margin: 0 2cm 0 3cm;
+  margin: 3cm 2cm 0 3cm;
   padding: 0;
 }
 

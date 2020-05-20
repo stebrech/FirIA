@@ -21,11 +21,11 @@
 	<key>IATemplateFooterFile</key>
 	<string>footer</string>
 	<key>IATemplateFooterHeight</key>
-	<integer>60</integer>
+	<integer>80</integer>
 	<key>IATemplateHeaderFile</key>
 	<string>header</string>
 	<key>IATemplateHeaderHeight</key>
-	<integer>60</integer>
+	<integer>80</integer>
 	<key>IATemplateDescription</key>
 	<string>iA Writer Template that uses the beautiful open font FiraSans</string>
 	<key>IATemplateAuthor</key>
