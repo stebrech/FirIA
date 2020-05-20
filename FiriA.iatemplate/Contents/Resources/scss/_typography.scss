@@ -261,6 +261,11 @@ blockquote {
     border-left: 6px solid $color_gray;
     color: $color_gray;
   }
+
+  @media print {
+    border-color: $color_gray;
+    color: $color_gray-dark;
+  }
 }
 
 

@@ -799,6 +799,12 @@ blockquote {
   border-left: 6px solid #adb5bd;
   color: #adb5bd;
 }
+@media print {
+  blockquote {
+    border-color: #adb5bd;
+    color: #495057;
+  }
+}
 
 /* -------------------------------------
 Links */
