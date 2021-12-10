@@ -1,384 +1,111 @@
 @charset "UTF-8";
+
 /**
  * iA Writer Template “FirIA”
  * Description: iA Writer Template that uses the beautiful open font FiraSans
  * Author: Stefan Brechbühl
  * Author URL: https://www.pixelstrol.ch/
  */
-/***************************************
-****************************************
-****************************************
-Fonts
-***************************************/
-@import url("https://fonts.googleapis.com/css?family=Fira+Sans:300,400,400i,700,700i&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Fira+Code&display=swap");
-/***************************************
-****************************************
-****************************************
-* normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css
-***************************************/
-/* -------------------------------------
-Document */
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
-html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-}
 
-/* -------------------------------------
-Sections */
-/* Remove the margin in all browsers. */
-body {
-  margin: 0;
-}
-
-/* Render the `main` element consistently in IE. */
-main {
-  display: block;
-}
-
-/* Correct the font size and margin on `h1` elements within `section` and article` contexts in Chrome, Firefox, and Safari. */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-/* -------------------------------------
-Grouping content */
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
-}
-
-/* -------------------------------------
-Text-level semantics
-
-/**
- * Remove the gray background on active links in IE 10.
- */
-a {
-  background-color: transparent;
-}
-
-/**
- * 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */
-}
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-b,
-strong {
-  font-weight: bolder;
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-code,
-kbd,
-samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
-}
-
-/**
- * Add the correct font size in all browsers.
- */
-small {
-  font-size: 80%;
-}
-
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-/* -------------------------------------
-Embedded content
-
-/**
- * Remove the border on images inside links in IE 10.
- */
-img {
-  border-style: none;
-}
-
-/* -------------------------------------
-Forms
-
-/**
- * 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari.
- */
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
-}
-
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-button,
-input {
-  /* 1 */
-  overflow: visible;
-}
-
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-button,
-select {
-  /* 1 */
-  text-transform: none;
-}
-
-/**
- * Correct the inability to style clickable types in iOS and Safari.
- */
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-}
-
-/**
- * Remove the inner border and padding in Firefox.
- */
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-/**
- * Restore the focus styles unset by the previous rule.
- */
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-/**
- * Correct the padding in Firefox.
- */
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
-
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
-legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
-}
-
-/**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-progress {
-  vertical-align: baseline;
-}
-
-/**
- * Remove the default vertical scrollbar in IE 10+.
- */
-textarea {
-  overflow: auto;
-}
-
-/**
- * 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10.
- */
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-}
-
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
-}
-
-/**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
-}
-
-/* -------------------------------------
-Interactive
-
-/*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
-details {
-  display: block;
-}
-
-/*
- * Add the correct display in all browsers.
- */
-summary {
-  display: list-item;
-}
-
-/* -------------------------------------
-Misc
-
-/**
- * Add the correct display in IE 10+.
- */
-template {
-  display: none;
-}
-
-/**
- * Add the correct display in IE 10.
- */
-[hidden] {
-  display: none;
-}
+@import url(/normalize.css);
 
 /***************************************
-****************************************
-****************************************
-* Layout
+ Fonts
 ***************************************/
-html {
-  background-color: #f8f9fa;
-  color: #212529;
+
+/* @import url("https://fonts.googleapis.com/css?family=Fira+Sans:300,400,400i,700,700i&display=swap"); */
+
+@font-face {
   font-family: "Fira Sans";
-  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  src: url("fonts/FiraSans-Light.ttf");
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-style: italic;
+  font-weight: 300;
+  src: url("fonts/FiraSans-LightItalic.ttf");
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/FiraSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("fonts/FiraSans-Italic.ttf");
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/FiraSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url("fonts/FiraSans-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/FiraCode-Regular.ttf");
+}
+
+/***************************************
+ Variables
+***************************************/
+
+:root {
+  /* Fonts */
+  --font-primary: "Fira Sans", sans-serif;
+  --font-code: "Fira Code", monospace;
+  /* Colors */
+  --color-gray-brightest: #f8f9fa;
+  --color-gray-bright: #e9ecef;
+  --color-gray: #adb5bd;
+  --color-gray-dark: #495057;
+  --color-gray-darkest: #212529;
+  --color-primary: #1c7ed6;
+  --color-primary-bright: #74c0fc;
+  /* Margins */
+  --margin-default: 1em 0 0 0;
+  --margin-bigger: 2em 0 0 0;
+}
+
+/***************************************
+ Layout
+***************************************/
+
+html {
+  background-color: var(--color-gray-brightest);
+  color: var(--color-gray-darkest);
+  font-family: var(--font-primary);
   font-weight: 400;
   line-height: 1.5;
 }
+
 @media print {
   html {
-    background: transparent !important;
-    /* Only on html due to checkboxes */
-    color: #000 !important;
-    /* black prints faster */
+    background: transparent !important; /* Only on html due to checkboxes */
+    color: #000 !important; /* black prints faster */
     font-size: 12pt;
     -webkit-hyphens: auto;
     hyphens: auto;
-    margin: 0;
-    /* Override for safety */
-    padding: 0;
-    /* Override for safety */
+    margin: 0; /* Override for safety */
+    padding: 0; /* Override for safety */
   }
 }
 
@@ -388,34 +115,38 @@ body {
   font-kerning: normal;
   font-size: 1rem;
   max-width: 100%;
-  padding: 0 2em;
-  text-rendering: optimizeLegibility;
-  /* NOTE May cause performance issues */
+  padding: 1em 2em;
+  text-rendering: optimizeLegibility; /* NOTE May cause performance issues */
   word-wrap: break-word;
 }
+
 @media screen and (min-width: 30rem) {
   body {
     font-size: 1.125rem;
-    padding: 0 3em;
+    padding: 1em 3em;
   }
 }
+
 @media screen and (min-width: 40rem) {
   body {
     font-size: 1.25rem;
-    padding: 0 4em;
+    padding: 1em 4em;
   }
 }
+
 @media screen and (min-width: 50rem) {
   body {
     font-size: 1.5rem;
   }
 }
+
 @media screen {
   body {
     margin: 0 auto;
     width: 42em;
   }
 }
+
 @media print {
   body {
     margin: 0 2cm 0 3cm;
@@ -435,8 +166,10 @@ body > :first-child {
 }
 
 /* Header and footer */
-.header, .footer {
-  font-size: .75em;
+
+.header,
+.footer {
+  font-size: 0.75em;
 }
 
 .header {
@@ -446,7 +179,7 @@ body > :first-child {
 }
 
 .footer {
-  margin: .5cm 2cm 0 0;
+  margin: 0.5cm 2cm 0 0;
   padding: 0;
   text-align: right;
 }
@@ -457,34 +190,20 @@ body > :first-child {
 }
 
 /* Night mode */
+
 .night-mode {
-  background-color: #212529;
-  color: #f8f9fa;
+  background-color: var(--color-gray-darkest);
+  color: var(--color-gray-brightest);
 }
 
-/***************************************
-****************************************
-****************************************
-** Typography
+/****************************************
+ Typography
 ****************************************/
+
 p {
-  margin: .75rem 0;
+  margin: var(--margin-default);
 }
-@media screen and (min-width: 30rem) {
-  p {
-    margin: 1rem 0;
-  }
-}
-@media screen and (min-width: 40rem) {
-  p {
-    margin: 1.25rem 0;
-  }
-}
-@media screen and (min-width: 50rem) {
-  p {
-    margin: 1.5rem 0;
-  }
-}
+
 @media print {
   p {
     /* Not supported by Webkit at time of writing, ref: https://bugs.webkit.org/show_bug.cgi?id=39735 */
@@ -512,6 +231,7 @@ p {
 
 /* -------------------------------------
 Headings */
+
 h1,
 h2,
 h3,
@@ -520,38 +240,9 @@ h5,
 h6 {
   float: none;
   line-height: 1.25;
-  margin: .75rem 0;
+  margin: var(--margin-bigger);
 }
-@media screen and (min-width: 30rem) {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 1rem 0;
-  }
-}
-@media screen and (min-width: 40rem) {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 1.25rem 0;
-  }
-}
-@media screen and (min-width: 50rem) {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 1.5rem 0;
-  }
-}
+
 @media print {
   h1,
   h2,
@@ -560,141 +251,39 @@ h6 {
   h5,
   h6 {
     page-break-inside: avoid;
-    page-break-after: avoid;
-    /* Not supported by Webkit at time of writing, ref: https://bugs.webkit.org/show_bug.cgi?id=5097 */
+    page-break-after: avoid; /* Not supported by Webkit at time of writing, ref: https://bugs.webkit.org/show_bug.cgi?id=5097 */
   }
 }
 
 h1 {
   font-size: 1.75em;
   font-weight: 300;
-  margin-top: 2rem;
-}
-@media screen and (min-width: 30rem) {
-  h1 {
-    margin-top: 3rem;
-  }
-}
-@media screen and (min-width: 40rem) {
-  h1 {
-    font-size: 2em;
-    margin-top: 4rem;
-  }
-}
-@media screen and (min-width: 50rem) {
-  h1 {
-    margin-top: 5rem;
-  }
 }
 
-h2 {
-  font-size: 1.25em;
-  font-weight: 600;
-  margin-top: 2rem;
-}
-@media screen and (min-width: 30rem) {
-  h2 {
-    margin-top: 3rem;
-  }
-}
-@media screen and (min-width: 40rem) {
-  h2 {
-    font-size: 1.5em;
-    margin-top: 4rem;
-  }
-}
-@media screen and (min-width: 50rem) {
-  h2 {
-    margin-top: 5rem;
-  }
+h2,
+h4 {
+  font-weight: 700;
 }
 
+h2,
 h3 {
   font-size: 1.25em;
-  font-weight: 400;
-  margin-top: 2rem;
-}
-@media screen and (min-width: 30rem) {
-  h3 {
-    margin-top: 3rem;
-  }
-}
-@media screen and (min-width: 40rem) {
-  h3 {
-    font-size: 1.5em;
-    margin-top: 4rem;
-  }
-}
-@media screen and (min-width: 50rem) {
-  h3 {
-    margin-top: 5rem;
-  }
 }
 
-h4 {
+h3,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+h4,
+h5,
+h6 {
   font-size: 1em;
-  font-weight: 600;
-  margin-top: 1.5rem;
-}
-@media screen and (min-width: 30rem) {
-  h4 {
-    margin-top: 2rem;
-  }
-}
-@media screen and (min-width: 40rem) {
-  h4 {
-    font-size: 1.25em;
-    margin-top: 2.5rem;
-  }
-}
-@media screen and (min-width: 50rem) {
-  h4 {
-    margin-top: 3rem;
-  }
 }
 
 h5 {
-  font-size: 1em;
-  font-weight: 400;
-  margin-top: 1.5rem;
-}
-@media screen and (min-width: 30rem) {
-  h5 {
-    margin-top: 2rem;
-  }
-}
-@media screen and (min-width: 40rem) {
-  h5 {
-    font-size: 1.25em;
-    margin-top: 2.5rem;
-  }
-}
-@media screen and (min-width: 50rem) {
-  h5 {
-    margin-top: 3rem;
-  }
-}
-
-h6 {
-  font-size: .75em;
-  font-weight: 600;
-  margin-top: 1.5rem;
-}
-@media screen and (min-width: 30rem) {
-  h6 {
-    margin-top: 2rem;
-  }
-}
-@media screen and (min-width: 40rem) {
-  h6 {
-    font-size: 1em;
-    margin-top: 2.5rem;
-  }
-}
-@media screen and (min-width: 50rem) {
-  h6 {
-    margin-top: 3rem;
-  }
+  font-style: italic;
 }
 
 /* Subheading adjustments */
@@ -712,6 +301,7 @@ h5 + h6 {
 
 /* Automatic Heading Numbering */
 /* Thanks to Phil Archer. http://philarcher.org/diary/2013/headingnumbers/ */
+
 .number-headings body {
   counter-reset: h1;
 }
@@ -719,6 +309,7 @@ h5 + h6 {
 .number-headings h1 {
   counter-reset: h2;
 }
+
 .number-headings h1:before {
   counter-increment: h1;
   content: counter(h1) ". ";
@@ -727,6 +318,7 @@ h5 + h6 {
 .number-headings h2 {
   counter-reset: h3;
 }
+
 .number-headings h2:before {
   counter-increment: h2;
   content: counter(h1) "." counter(h2) ". ";
@@ -735,6 +327,7 @@ h5 + h6 {
 .number-headings h3 {
   counter-reset: h4;
 }
+
 .number-headings h3:before {
   counter-increment: h3;
   content: counter(h1) "." counter(h2) "." counter(h3) ". ";
@@ -743,6 +336,7 @@ h5 + h6 {
 .number-headings h4 {
   counter-reset: h5;
 }
+
 .number-headings h4:before {
   counter-increment: h4;
   content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) ". ";
@@ -751,6 +345,7 @@ h5 + h6 {
 .number-headings h5 {
   counter-reset: h6;
 }
+
 .number-headings h5:before {
   counter-increment: h5;
   content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". ";
@@ -758,7 +353,8 @@ h5 + h6 {
 
 .number-headings h6:before {
   counter-increment: h6;
-  content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". ";
+  content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "."
+    counter(h6) ". ";
 }
 
 h1.nocount:before,
@@ -773,46 +369,36 @@ h6.nocount:before {
 
 /* -------------------------------------
 Blockquotes */
+
 blockquote {
-  border-left: 6px solid #e9ecef;
-  color: #adb5bd;
+  border-left: 6px solid var(--color-gray-bright);
+  color: var(--color-gray);
   padding: 0 1em;
-  margin: .75rem 0;
+  margin: var(--margin-default);
   font-style: italic;
 }
-@media screen and (min-width: 30rem) {
-  blockquote {
-    margin: 1rem 0;
-  }
-}
-@media screen and (min-width: 40rem) {
-  blockquote {
-    margin: 1.25rem 0;
-  }
-}
-@media screen and (min-width: 50rem) {
-  blockquote {
-    margin: 1.5rem 0;
-  }
-}
+
 .night-mode blockquote {
-  border-left: 6px solid #adb5bd;
-  color: #adb5bd;
+  border-left: 6px solid var(--color-gray);
+  color: var(--color-gray);
 }
+
 @media print {
   blockquote {
-    border-color: #adb5bd;
-    color: #495057;
+    border-color: var(--color-gray);
+    color: var(color-gray-dark);
   }
 }
 
 /* -------------------------------------
 Links */
+
 a {
-  color: #1c7ed6;
+  color: var(--color_primary);
 }
+
 .night-mode a {
-  color: #74c0fc;
+  color: var(--color_primary-bright);
 }
 
 @media print {
@@ -821,38 +407,29 @@ a {
     text-decoration: none;
   }
 }
+
 /* -------------------------------------
 Footnotes */
+
 .footnotes {
-  font-size: .75em;
+  font-size: 0.75em;
+  margin: var(--margin-default);
   margin-top: 3rem;
   page-break-before: avoid;
 }
+
 @media (min-width: 40rem) {
   .footnotes {
     margin-top: 5rem;
   }
 }
+
 .footnotes hr {
-  margin: .75rem 0;
+  margin: var(--margin-default);
   page-break-after: avoid;
   width: 10rem;
 }
-@media screen and (min-width: 30rem) {
-  .footnotes hr {
-    margin: 1rem 0;
-  }
-}
-@media screen and (min-width: 40rem) {
-  .footnotes hr {
-    margin: 1.25rem 0;
-  }
-}
-@media screen and (min-width: 50rem) {
-  .footnotes hr {
-    margin: 1.5rem 0;
-  }
-}
+
 .footnotes p {
   margin: 0 auto;
 }
@@ -868,88 +445,68 @@ Footnotes */
     display: none;
   }
 }
+
 /* Remove underline on .reversefootnote arrow for iOS, as it’s turned into an emoji */
 @media screen and (max-device-width: 1024px) {
   .reversefootnote {
     text-decoration: none;
   }
 }
+
 /* -------------------------------------
 Code */
-code, pre, kbd {
-  background-color: #e9ecef;
-  border-color: #e9ecef;
+
+code,
+pre,
+kbd {
+  background-color: var(--color-gray-bright);
+  border-color: var(--color-gray-bright);
   border-radius: 2px;
-  color: #212529;
-  font-size: .9em;
+  color: var(--color-gray-darkest);
+  font-size: 0.9em;
   white-space: pre-wrap;
 }
+
 .night-mode code,
 .night-mode pre,
 .night-mode kbd {
-  background-color: #495057;
-  border-color: #495057;
-  color: #f8f9fa;
+  background-color: var(--color-gray-dark);
+  border-color: var(--color-gray-dark);
+  color: var(--color-gray-brightest);
 }
 
 code,
 samp,
 kbd {
-  font-family: 'Fira Code', monospace;
+  font-family: var(--font-code);
   font-weight: 400;
 }
 
 /* Prevent code line-height increasing heading line-height */
-:-webkit-any(h1, h2, h3, h4, h5, h6) > code, kbd {
+:-webkit-any(h1, h2, h3, h4, h5, h6) > code,
+kbd {
   line-height: normal;
 }
 
 pre {
-  margin: .75rem 0;
+  margin: var(--margin-default);
   overflow: hidden;
-}
-@media screen and (min-width: 30rem) {
-  pre {
-    margin: 1rem 0;
-  }
-}
-@media screen and (min-width: 40rem) {
-  pre {
-    margin: 1.25rem 0;
-  }
-}
-@media screen and (min-width: 50rem) {
-  pre {
-    margin: 1.5rem 0;
-  }
 }
 
 /* -------------------------------------
 Horizontal rule */
+
 hr {
   clear: both;
   border: 0;
-  border-bottom: 1px #212529 solid;
-  margin: .75rem 0;
+  border-bottom: 1px var(--color-gray-darkest) solid;
+  margin: var(--margin-default);
 }
-@media screen and (min-width: 30rem) {
-  hr {
-    margin: 1rem 0;
-  }
-}
-@media screen and (min-width: 40rem) {
-  hr {
-    margin: 1.25rem 0;
-  }
-}
-@media screen and (min-width: 50rem) {
-  hr {
-    margin: 1.5rem 0;
-  }
-}
+
 .night-mode hr {
-  border-bottom-color: #f8f9fa;
+  border-bottom-color: var(--color-gray-bright) est;
 }
+
 @media print {
   hr {
     border-bottom-color: #000 !important;
@@ -957,40 +514,42 @@ hr {
 }
 
 /***************************************
-****************************************
-****************************************
 * Lists
 ***************************************/
+
 ul,
 ol {
-  margin: .5em 0 0 -2em;
+  margin: 0.5em 0 0 -2em;
   padding: 0 0 0 1em;
   position: relative;
 }
-ul li,
-ol li {
-  margin: .5em 0 0 1em;
+
+li {
+  margin: 0.5em 0 0 1em;
 }
-ul li ul,
-ul li ol,
-ol li ul,
-ol li ol {
+
+li ul,
+li ol {
   margin: 0 0 0 -1em;
 }
-ul li ul li,
-ul li ol li,
-ol li ul li,
-ol li ol li {
+
+li ul li,
+li ol li {
   margin: 0 0 0 1em;
 }
 
 ul {
   list-style: none;
 }
+
 ul li::before {
   content: "–";
   margin-left: -1em;
   position: absolute;
+}
+
+ol li::before {
+  content: none;
 }
 
 blockquote ol {
@@ -1000,44 +559,49 @@ blockquote ol {
 blockquote li {
   margin-left: 2em;
 }
-blockquote li:before {
+
+blockquote li :before {
   margin-left: -1em;
 }
 
 /* Task Lists */
+
 .task-list-item::before {
-  content: "";
+  display: none;
 }
+
 ol .task-list-item {
   padding-left: 1.5em;
 }
+
 .task-list-item .task-list-item-checkbox {
-  width: 1.5em;
-  height: 1em;
-  margin-left: -1.5em;
-  vertical-align: middle;
-  border: none;
-  /* Otherwise iPhone draws a border */
+  width: 1.25em;
+  height: 1.25em;
+  margin: 0 0.75em 0 -2em;
+  vertical-align: baseline;
+  position: relative;
+  border: none; /* Otherwise iPhone draws a border */
   background-image: url("assets/box.svg");
   background-repeat: no-repeat;
-  background-size: 80% 80%;
+  background-size: 100% 100%;
   background-color: transparent;
-  -webkit-print-color-adjust: exact;
-  /* Prevents from hiding when printed */
-  -webkit-appearance: none;
-  /* Disables system checkbox image */
-  opacity: 1.0;
-  /* Otherwise they are 0.4 on iPhone, where it applies disabled effect even with above */
+  -webkit-print-color-adjust: exact; /* Prevents from hiding when printed */
+  -webkit-appearance: none; /* Disables system checkbox image */
+  opacity: 1; /* Otherwise they are 0.4 on iPhone, where it applies disabled effect even with above */
 }
+
 .task-list-item .task-list-item-checkbox:checked {
   background-image: url("assets/check.svg");
 }
+
 .night-mode .task-list-item .task-list-item-checkbox {
   background-image: url("assets/box-night-mode.svg");
 }
+
 .night-mode .task-list-item .task-list-item-checkbox:checked {
   background-image: url("assets/check-night-mode.svg");
 }
+
 .task-list-item p {
   display: inline;
 }
@@ -1051,8 +615,7 @@ ul li:empty::after,
 }
 
 dd {
-  -webkit-margin-start: 2.2222rem;
-  /* ~40px for font-size: 18px. rem works better for RWD than % */
+  -webkit-margin-start: 2.2222rem; /* ~40px for font-size: 18px. rem works better for RWD than % */
   margin-start: 2.2222rem;
 }
 
@@ -1063,81 +626,53 @@ dd {
 }
 
 /* Definition lists */
+
 dl {
-  margin: .75rem 0;
-}
-@media screen and (min-width: 30rem) {
-  dl {
-    margin: 1rem 0;
-  }
-}
-@media screen and (min-width: 40rem) {
-  dl {
-    margin: 1.25rem 0;
-  }
-}
-@media screen and (min-width: 50rem) {
-  dl {
-    margin: 1.5rem 0;
-  }
+  margin: var(--margin-default);
 }
 
 /***************************************
-****************************************
-****************************************
 * Tables
 ***************************************/
+
 table {
   border: 0;
   border-collapse: collapse;
-  font-size: .75em;
-  margin: .75rem 0;
+  font-size: 0.75em;
+  margin: var(--margin-default);
   table-layout: fixed;
   width: 100%;
-}
-@media screen and (min-width: 30rem) {
-  table {
-    margin: 1rem 0;
-  }
-}
-@media screen and (min-width: 40rem) {
-  table {
-    margin: 1.25rem 0;
-  }
-}
-@media screen and (min-width: 50rem) {
-  table {
-    margin: 1.5rem 0;
-  }
 }
 
 caption {
   text-align: left;
   font-style: italic;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 tr:first-of-type th {
   background-color: transparent;
-  border-bottom: 2px solid #212529;
+  border-bottom: 2px solid var(--color-gray-darkest);
 }
+
 .night-mode tr:first-of-type th {
-  border-bottom: 2px solid #f8f9fa;
+  border-bottom: 2px solid var(--color-gray-brightest);
 }
 
 tr:nth-of-type(even) {
-  background-color: #e9ecef;
+  background-color: var(--color-gray-bright);
 }
+
 .night-mode tr:nth-of-type(even) {
-  background-color: #495057;
+  background-color: var(--color-gray-dark);
 }
 
 th,
 td {
-  padding: .25rem .5rem .25rem 0;
+  padding: 0.25rem 0.5rem 0.25rem 0;
 }
-th:last-of-type, th:last-of-type,
-td:last-of-type,
+
+th:last-of-type,
 td:last-of-type {
   padding-right: 0;
 }
@@ -1147,52 +682,34 @@ th {
 }
 
 /***************************************
-****************************************
-****************************************
 * Media
 ***************************************/
+
 figure {
-  margin: .75rem 0;
+  margin: var(--margin-default);
   page-break-inside: avoid;
-  page-break-after: avoid;
-  /* Not supported by Webkit at time of writing, ref: https://bugs.webkit.org/show_bug.cgi?id=5097 */
-}
-@media screen and (min-width: 30rem) {
-  figure {
-    margin: 1rem 0;
-  }
-}
-@media screen and (min-width: 40rem) {
-  figure {
-    margin: 1.25rem 0;
-  }
-}
-@media screen and (min-width: 50rem) {
-  figure {
-    margin: 1.5rem 0;
-  }
+  page-break-after: avoid; /* Not supported by Webkit at time of writing, ref: https://bugs.webkit.org/show_bug.cgi?id=5097 */
 }
 
 img {
   max-width: 100%;
   overflow: hidden;
   page-break-inside: avoid;
-  page-break-after: avoid;
-  /* Not supported by Webkit at time of writing, ref: https://bugs.webkit.org/show_bug.cgi?id=5097 */
+  page-break-after: avoid; /* Not supported by Webkit at time of writing, ref: https://bugs.webkit.org/show_bug.cgi?id=5097 */
   vertical-align: top;
 }
+
 figure img {
   display: block;
 }
 
 figcaption {
   font-style: italic;
-  margin-top: .5em;
-}
-@media screen and (min-width: 30rem) {
-  figcaption {
-    font-size: .75em;
-  }
+  margin-top: 0.5em;
 }
 
-/*# sourceMappingURL=style.css.map */
+@media screen and (min-width: 30rem) {
+  figcaption {
+    font-size: 0.75em;
+  }
+}
