@@ -716,3 +716,16 @@ figcaption {
 		font-size: 0.75em;
 	}
 }
+
+/***************************************
+* HTML inserts
+***************************************/
+
+aside {
+	color: var(--color-gray-dark);
+	font-size: 0.75em;
+	border-left: 5px solid var(--color-gray);
+	background-color: var(--color-gray-bright);
+	margin-top: 1rem;
+	padding: 0.5em 0.5em 0.5em 0.75em;
+}
