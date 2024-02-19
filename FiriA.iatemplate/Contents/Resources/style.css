@@ -290,8 +290,9 @@ h5 {
 h1 + h2,
 h2 + h3,
 h3 + h4,
+h4 + h5,
 h5 + h6 {
-	margin-top: 0;
+	margin: var(--margin-default);
 }
 
 /* Center h1-h6 headings, via the Centered Headings setting */
