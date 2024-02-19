@@ -16,52 +16,52 @@
 /* @import url("https://fonts.googleapis.com/css?family=Fira+Sans:300,400,400i,700,700i&display=swap"); */
 
 @font-face {
-  font-family: "Fira Sans";
-  font-style: normal;
-  font-weight: 300;
-  src: url("fonts/FiraSans-Light.ttf");
+	font-family: "Fira Sans";
+	font-style: normal;
+	font-weight: 300;
+	src: url("fonts/FiraSans-Light.ttf");
 }
 
 @font-face {
-  font-family: "Fira Sans";
-  font-style: italic;
-  font-weight: 300;
-  src: url("fonts/FiraSans-LightItalic.ttf");
+	font-family: "Fira Sans";
+	font-style: italic;
+	font-weight: 300;
+	src: url("fonts/FiraSans-LightItalic.ttf");
 }
 
 @font-face {
-  font-family: "Fira Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("fonts/FiraSans-Regular.ttf");
+	font-family: "Fira Sans";
+	font-style: normal;
+	font-weight: 400;
+	src: url("fonts/FiraSans-Regular.ttf");
 }
 
 @font-face {
-  font-family: "Fira Sans";
-  font-style: italic;
-  font-weight: 400;
-  src: url("fonts/FiraSans-Italic.ttf");
+	font-family: "Fira Sans";
+	font-style: italic;
+	font-weight: 400;
+	src: url("fonts/FiraSans-Italic.ttf");
 }
 
 @font-face {
-  font-family: "Fira Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: url("fonts/FiraSans-Bold.ttf");
+	font-family: "Fira Sans";
+	font-style: normal;
+	font-weight: 700;
+	src: url("fonts/FiraSans-Bold.ttf");
 }
 
 @font-face {
-  font-family: "Fira Sans";
-  font-style: italic;
-  font-weight: 700;
-  src: url("fonts/FiraSans-BoldItalic.ttf");
+	font-family: "Fira Sans";
+	font-style: italic;
+	font-weight: 700;
+	src: url("fonts/FiraSans-BoldItalic.ttf");
 }
 
 @font-face {
-  font-family: "Fira Code";
-  font-style: normal;
-  font-weight: 400;
-  src: url("fonts/FiraCode-Regular.ttf");
+	font-family: "Fira Code";
+	font-style: normal;
+	font-weight: 400;
+	src: url("fonts/FiraCode-Regular.ttf");
 }
 
 /***************************************
@@ -69,20 +69,20 @@
 ***************************************/
 
 :root {
-  /* Fonts */
-  --font-primary: "Fira Sans", sans-serif;
-  --font-code: "Fira Code", monospace;
-  /* Colors */
-  --color-gray-brightest: #f8f9fa;
-  --color-gray-bright: #e9ecef;
-  --color-gray: #adb5bd;
-  --color-gray-dark: #495057;
-  --color-gray-darkest: #212529;
-  --color-primary: #1c7ed6;
-  --color-primary-bright: #74c0fc;
-  /* Margins */
-  --margin-default: 1em 0 0 0;
-  --margin-bigger: 2em 0 0 0;
+	/* Fonts */
+	--font-primary: "Fira Sans", sans-serif;
+	--font-code: "Fira Code", monospace;
+	/* Colors */
+	--color-gray-brightest: #f8f9fa;
+	--color-gray-bright: #e9ecef;
+	--color-gray: #adb5bd;
+	--color-gray-dark: #495057;
+	--color-gray-darkest: #212529;
+	--color-primary: #1c7ed6;
+	--color-primary-bright: #74c0fc;
+	/* Margins */
+	--margin-default: 1em 0 0 0;
+	--margin-bigger: 2em 0 0 0;
 }
 
 /***************************************
@@ -90,110 +90,110 @@
 ***************************************/
 
 html {
-  background-color: var(--color-gray-brightest);
-  color: var(--color-gray-darkest);
-  font-family: var(--font-primary);
-  font-weight: 400;
-  line-height: 1.5;
+	background-color: var(--color-gray-brightest);
+	color: var(--color-gray-darkest);
+	font-family: var(--font-primary);
+	font-weight: 400;
+	line-height: 1.5;
 }
 
 @media print {
-  html {
-    background: transparent !important; /* Only on html due to checkboxes */
-    color: #000 !important; /* black prints faster */
-    font-size: 12pt;
-    -webkit-hyphens: auto;
-    hyphens: auto;
-    margin: 0; /* Override for safety */
-    padding: 0; /* Override for safety */
-  }
+	html {
+		background: transparent !important; /* Only on html due to checkboxes */
+		color: #000 !important; /* black prints faster */
+		font-size: 12pt;
+		-webkit-hyphens: auto;
+		hyphens: auto;
+		margin: 0; /* Override for safety */
+		padding: 0; /* Override for safety */
+	}
 }
 
 body {
-  box-sizing: border-box;
-  -webkit-font-kerning: normal;
-  font-kerning: normal;
-  font-size: 1rem;
-  max-width: 100%;
-  padding: 1em 2em;
-  text-rendering: optimizeLegibility; /* NOTE May cause performance issues */
-  word-wrap: break-word;
+	box-sizing: border-box;
+	-webkit-font-kerning: normal;
+	font-kerning: normal;
+	font-size: 1rem;
+	max-width: 100%;
+	padding: 1em 2em;
+	text-rendering: optimizeLegibility; /* NOTE May cause performance issues */
+	word-wrap: break-word;
 }
 
 @media screen and (min-width: 30rem) {
-  body {
-    font-size: 1.125rem;
-    padding: 1em 3em;
-  }
+	body {
+		font-size: 1.125rem;
+		padding: 1em 3em;
+	}
 }
 
 @media screen and (min-width: 40rem) {
-  body {
-    font-size: 1.25rem;
-    padding: 1em 4em;
-  }
+	body {
+		font-size: 1.25rem;
+		padding: 1em 4em;
+	}
 }
 
 @media screen and (min-width: 50rem) {
-  body {
-    font-size: 1.5rem;
-  }
+	body {
+		font-size: 1.5rem;
+	}
 }
 
 @media screen {
-  body {
-    margin: 0 auto;
-    width: 42em;
-  }
+	body {
+		margin: 0 auto;
+		width: 42em;
+	}
 }
 
 @media print {
-  body {
-    margin: 0 2cm 0 3cm;
-    padding: 0;
-  }
+	body {
+		margin: 0 2cm 0 3cm;
+		padding: 0;
+	}
 }
 
 /* Make sure there’s no margin-top on first element */
 body > :first-child {
-  margin-top: 0;
-  padding-top: 0;
+	margin-top: 0;
+	padding-top: 0;
 }
 
 /* give elements on new pages the same top margin as first element of document */
 .page-break + * {
-  margin-top: 0;
+	margin-top: 0;
 }
 
 /* Header and footer */
 
 .header,
 .footer {
-  font-size: 0.75em;
+	font-size: 0.75em;
 }
 
 .header {
-  margin: 1cm 2cm 0 3cm;
-  padding: 0;
-  text-align: left;
+	margin: 1cm 2cm 0 3cm;
+	padding: 0;
+	text-align: left;
 }
 
 .footer {
-  margin: 0.5cm 2cm 0 0;
-  padding: 0;
-  text-align: right;
+	margin: 0.5cm 2cm 0 0;
+	padding: 0;
+	text-align: right;
 }
 
 .front {
-  margin: 3cm 2cm 0 3cm;
-  padding: 0;
+	margin: 3cm 2cm 0 3cm;
+	padding: 0;
 }
 
 /* Night mode */
 
 .night-mode {
-  background-color: var(--color-gray-darkest);
-  color: var(--color-gray-brightest);
+	background-color: var(--color-gray-darkest);
+	color: var(--color-gray-brightest);
 }
 
 /****************************************
@@ -201,32 +201,32 @@ body > :first-child {
 ****************************************/
 
 p {
-  margin: var(--margin-default);
+	margin: var(--margin-default);
 }
 
 @media print {
-  p {
-    /* Not supported by Webkit at time of writing, ref: https://bugs.webkit.org/show_bug.cgi?id=39735 */
-    widows: 2;
-    orphans: 2;
-  }
+	p {
+		/* Not supported by Webkit at time of writing, ref: https://bugs.webkit.org/show_bug.cgi?id=39735 */
+		widows: 2;
+		orphans: 2;
+	}
 }
 
 /* Indent the first line of sequential paragraphs, via the Indent Paragraph setting */
 .indent-paragraphs p + p {
-  margin-top: 0;
-  text-indent: 2em;
+	margin-top: 0;
+	text-indent: 2em;
 }
 
 .title {
-  font-size: 2.5rem;
-  font-weight: 300;
+	font-size: 2.5rem;
+	font-weight: 300;
 }
 
 .subtitle {
-  border-top: 1px solid #000;
-  font-weight: 600;
-  padding-top: 1em;
+	border-top: 1px solid #000;
+	font-weight: 600;
+	padding-top: 1em;
 }
 
 /* -------------------------------------
@@ -238,52 +238,52 @@ h3,
 h4,
 h5,
 h6 {
-  float: none;
-  line-height: 1.25;
-  margin: var(--margin-bigger);
+	float: none;
+	line-height: 1.25;
+	margin: var(--margin-bigger);
 }
 
 @media print {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    page-break-inside: avoid;
-    page-break-after: avoid; /* Not supported by Webkit at time of writing, ref: https://bugs.webkit.org/show_bug.cgi?id=5097 */
-  }
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		page-break-inside: avoid;
+		page-break-after: avoid; /* Not supported by Webkit at time of writing, ref: https://bugs.webkit.org/show_bug.cgi?id=5097 */
+	}
 }
 
 h1 {
-  font-size: 1.75em;
-  font-weight: 300;
+	font-size: 1.75em;
+	font-weight: 300;
 }
 
 h2,
 h4 {
-  font-weight: 700;
+	font-weight: 700;
 }
 
 h2,
 h3 {
-  font-size: 1.25em;
+	font-size: 1.25em;
 }
 
 h3,
 h5,
 h6 {
-  font-weight: 400;
+	font-weight: 400;
 }
 
 h4,
 h5,
 h6 {
-  font-size: 1em;
+	font-size: 1em;
 }
 
 h5 {
-  font-style: italic;
+	font-style: italic;
 }
 
 /* Subheading adjustments */
@@ -291,70 +291,71 @@ h1 + h2,
 h2 + h3,
 h3 + h4,
 h5 + h6 {
-  margin-top: 0;
+	margin-top: 0;
 }
 
 /* Center h1-h6 headings, via the Centered Headings setting */
 .center-headings :-webkit-any(h1, h2, h3, h4, h5, h6) {
-  text-align: center;
+	text-align: center;
 }
 
 /* Automatic Heading Numbering */
 /* Thanks to Phil Archer. http://philarcher.org/diary/2013/headingnumbers/ */
 
 .number-headings body {
-  counter-reset: h1;
+	counter-reset: h1;
 }
 
 .number-headings h1 {
-  counter-reset: h2;
+	counter-reset: h2;
 }
 
 .number-headings h1:before {
-  counter-increment: h1;
-  content: counter(h1) ". ";
+	counter-increment: h1;
+	content: counter(h1) ". ";
 }
 
 .number-headings h2 {
-  counter-reset: h3;
+	counter-reset: h3;
 }
 
 .number-headings h2:before {
-  counter-increment: h2;
-  content: counter(h1) "." counter(h2) ". ";
+	counter-increment: h2;
+	content: counter(h1) "." counter(h2) ". ";
 }
 
 .number-headings h3 {
-  counter-reset: h4;
+	counter-reset: h4;
 }
 
 .number-headings h3:before {
-  counter-increment: h3;
-  content: counter(h1) "." counter(h2) "." counter(h3) ". ";
+	counter-increment: h3;
+	content: counter(h1) "." counter(h2) "." counter(h3) ". ";
 }
 
 .number-headings h4 {
-  counter-reset: h5;
+	counter-reset: h5;
 }
 
 .number-headings h4:before {
-  counter-increment: h4;
-  content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) ". ";
+	counter-increment: h4;
+	content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) ". ";
 }
 
 .number-headings h5 {
-  counter-reset: h6;
+	counter-reset: h6;
 }
 
 .number-headings h5:before {
-  counter-increment: h5;
-  content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". ";
+	counter-increment: h5;
+	content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "."
+		counter(h5) ". ";
 }
 
 .number-headings h6:before {
-  counter-increment: h6;
-  content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "."
-    counter(h6) ". ";
+	counter-increment: h6;
+	content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "."
+		counter(h5) "." counter(h6) ". ";
 }
 
 h1.nocount:before,
@@ -363,94 +364,94 @@ h3.nocount:before,
 h4.nocount:before,
 h5.nocount:before,
 h6.nocount:before {
-  content: "";
-  counter-increment: none;
+	content: "";
+	counter-increment: none;
 }
 
 /* -------------------------------------
 Blockquotes */
 
 blockquote {
-  border-left: 6px solid var(--color-gray-bright);
-  color: var(--color-gray);
-  padding: 0 1em;
-  margin: var(--margin-default);
-  font-style: italic;
+	border-left: 6px solid var(--color-gray-bright);
+	color: var(--color-gray);
+	padding: 0 1em;
+	margin: var(--margin-default);
+	font-style: italic;
 }
 
 .night-mode blockquote {
-  border-left: 6px solid var(--color-gray);
-  color: var(--color-gray);
+	border-left: 6px solid var(--color-gray);
+	color: var(--color-gray);
 }
 
 @media print {
-  blockquote {
-    border-color: var(--color-gray);
-    color: var(color-gray-dark);
-  }
+	blockquote {
+		border-color: var(--color-gray);
+		color: var(color-gray-dark);
+	}
 }
 
 /* -------------------------------------
 Links */
 
 a {
-  color: var(--color_primary);
+	color: var(--color_primary);
 }
 
 .night-mode a {
-  color: var(--color_primary-bright);
+	color: var(--color_primary-bright);
 }
 
 @media print {
-  /* Underline for table of contents on printed pages */
-  .TOC a {
-    text-decoration: none;
-  }
+	/* Underline for table of contents on printed pages */
+	.TOC a {
+		text-decoration: none;
+	}
 }
 
 /* -------------------------------------
 Footnotes */
 
 .footnotes {
-  font-size: 0.75em;
-  margin: var(--margin-default);
-  margin-top: 3rem;
-  page-break-before: avoid;
+	font-size: 0.75em;
+	margin: var(--margin-default);
+	margin-top: 3rem;
+	page-break-before: avoid;
 }
 
 @media (min-width: 40rem) {
-  .footnotes {
-    margin-top: 5rem;
-  }
+	.footnotes {
+		margin-top: 5rem;
+	}
 }
 
 .footnotes hr {
-  margin: var(--margin-default);
-  page-break-after: avoid;
-  width: 10rem;
+	margin: var(--margin-default);
+	page-break-after: avoid;
+	width: 10rem;
 }
 
 .footnotes p {
-  margin: 0 auto;
+	margin: 0 auto;
 }
 
 @media print {
-  /* Underline on superscript footnote number, which when clicked shows an error */
-  .footnote {
-    text-decoration: none;
-  }
+	/* Underline on superscript footnote number, which when clicked shows an error */
+	.footnote {
+		text-decoration: none;
+	}
 
-  /* Link which allows you to go back to the text from footnote—useless on a printed page */
-  .reversefootnote {
-    display: none;
-  }
+	/* Link which allows you to go back to the text from footnote—useless on a printed page */
+	.reversefootnote {
+		display: none;
+	}
 }
 
 /* Remove underline on .reversefootnote arrow for iOS, as it’s turned into an emoji */
 @media screen and (max-device-width: 1024px) {
-  .reversefootnote {
-    text-decoration: none;
-  }
+	.reversefootnote {
+		text-decoration: none;
+	}
 }
 
 /* -------------------------------------
@@ -459,58 +460,58 @@ Code */
 code,
 pre,
 kbd {
-  background-color: var(--color-gray-bright);
-  border-color: var(--color-gray-bright);
-  border-radius: 2px;
-  color: var(--color-gray-darkest);
-  font-size: 0.9em;
-  white-space: pre-wrap;
+	background-color: var(--color-gray-bright);
+	border-color: var(--color-gray-bright);
+	border-radius: 2px;
+	color: var(--color-gray-darkest);
+	font-size: 0.9em;
+	white-space: pre-wrap;
 }
 
 .night-mode code,
 .night-mode pre,
 .night-mode kbd {
-  background-color: var(--color-gray-dark);
-  border-color: var(--color-gray-dark);
-  color: var(--color-gray-brightest);
+	background-color: var(--color-gray-dark);
+	border-color: var(--color-gray-dark);
+	color: var(--color-gray-brightest);
 }
 
 code,
 samp,
 kbd {
-  font-family: var(--font-code);
-  font-weight: 400;
+	font-family: var(--font-code);
+	font-weight: 400;
 }
 
 /* Prevent code line-height increasing heading line-height */
 :-webkit-any(h1, h2, h3, h4, h5, h6) > code,
 kbd {
-  line-height: normal;
+	line-height: normal;
 }
 
 pre {
-  margin: var(--margin-default);
-  overflow: hidden;
+	margin: var(--margin-default);
+	overflow: hidden;
 }
 
 /* -------------------------------------
 Horizontal rule */
 
 hr {
-  clear: both;
-  border: 0;
-  border-bottom: 1px var(--color-gray-darkest) solid;
-  margin: var(--margin-default);
+	clear: both;
+	border: 0;
+	border-bottom: 1px var(--color-gray-darkest) solid;
+	margin: var(--margin-default);
 }
 
 .night-mode hr {
-  border-bottom-color: var(--color-gray-bright) est;
+	border-bottom-color: var(--color-gray-bright) est;
 }
 
 @media print {
-  hr {
-    border-bottom-color: #000 !important;
-  }
+	hr {
+		border-bottom-color: #000 !important;
+	}
 }
 
 /***************************************
@@ -519,116 +520,116 @@ hr {
 
 ul,
 ol {
-  margin: 0.5em 0 0 -2em;
-  padding: 0 0 0 1em;
-  position: relative;
+	margin: 0.5em 0 0 -2em;
+	padding: 0 0 0 1em;
+	position: relative;
 }
 
 li {
-  margin: 0.5em 0 0 1em;
+	margin: 0.5em 0 0 1em;
 }
 
 li ul,
 li ol {
-  margin: 0 0 0 -1em;
+	margin: 0 0 0 -1em;
 }
 
 li ul li,
 li ol li {
-  margin: 0 0 0 1em;
+	margin: 0 0 0 1em;
 }
 
 ul {
-  list-style: none;
+	list-style: none;
 }
 
 ul li::before {
-  content: "–";
-  margin-left: -1em;
-  position: absolute;
+	content: "–";
+	margin-left: -1em;
+	position: absolute;
 }
 
 ol li::before {
-  content: none;
+	content: none;
 }
 
 blockquote ol {
-  margin-left: -2em;
+	margin-left: -2em;
 }
 
 blockquote li {
-  margin-left: 2em;
+	margin-left: 2em;
 }
 
 blockquote li :before {
-  margin-left: -1em;
+	margin-left: -1em;
 }
 
 /* Task Lists */
 
 .task-list-item::before {
-  display: none;
+	display: none;
 }
 
 ol .task-list-item {
-  padding-left: 1.5em;
+	padding-left: 1.5em;
 }
 
 .task-list-item .task-list-item-checkbox {
-  width: 1.25em;
-  height: 1.25em;
-  margin: 0 0.75em 0 -2em;
-  vertical-align: baseline;
-  position: relative;
-  border: none; /* Otherwise iPhone draws a border */
-  background-image: url("assets/box.svg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-color: transparent;
-  -webkit-print-color-adjust: exact; /* Prevents from hiding when printed */
-  -webkit-appearance: none; /* Disables system checkbox image */
-  opacity: 1; /* Otherwise they are 0.4 on iPhone, where it applies disabled effect even with above */
+	width: 1.25em;
+	height: 1.25em;
+	margin: 0 0.75em 0 -2em;
+	vertical-align: baseline;
+	position: relative;
+	border: none; /* Otherwise iPhone draws a border */
+	background-image: url("assets/box.svg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-color: transparent;
+	-webkit-print-color-adjust: exact; /* Prevents from hiding when printed */
+	-webkit-appearance: none; /* Disables system checkbox image */
+	opacity: 1; /* Otherwise they are 0.4 on iPhone, where it applies disabled effect even with above */
 }
 
 .task-list-item .task-list-item-checkbox:checked {
-  background-image: url("assets/check.svg");
+	background-image: url("assets/check.svg");
 }
 
 .night-mode .task-list-item .task-list-item-checkbox {
-  background-image: url("assets/box-night-mode.svg");
+	background-image: url("assets/box-night-mode.svg");
 }
 
 .night-mode .task-list-item .task-list-item-checkbox:checked {
-  background-image: url("assets/check-night-mode.svg");
+	background-image: url("assets/check-night-mode.svg");
 }
 
 .task-list-item p {
-  display: inline;
+	display: inline;
 }
 
 /* HACK: Prevent empty list items collapsing
    Note this doesn’t work for paragraph lists, although we can fix via class or once has() is supported with: `ul li:not:has(p)::after` */
 ul li:empty::after,
 .task-list-item:last-child::after {
-  content: "";
-  display: inline-block;
+	content: "";
+	display: inline-block;
 }
 
 dd {
-  -webkit-margin-start: 2.2222rem; /* ~40px for font-size: 18px. rem works better for RWD than % */
-  margin-start: 2.2222rem;
+	-webkit-margin-start: 2.2222rem; /* ~40px for font-size: 18px. rem works better for RWD than % */
+	margin-start: 2.2222rem;
 }
 
 /* Remove vertical margins on nested lists */
 :-webkit-any(li, dt, dd, th, td) > :-webkit-any(ul, ol, dl) {
-  margin-top: 0;
-  margin-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 /* Definition lists */
 
 dl {
-  margin: var(--margin-default);
+	margin: var(--margin-default);
 }
 
 /***************************************
@@ -636,49 +637,50 @@ dl {
 ***************************************/
 
 table {
-  border: 0;
-  border-collapse: collapse;
-  font-size: 0.75em;
-  margin: var(--margin-default);
-  table-layout: fixed;
-  width: 100%;
+	border: 0;
+	border-collapse: collapse;
+	font-size: 0.75em;
+	margin: var(--margin-default);
+	table-layout: auto;
+	width: 100%;
 }
 
 caption {
-  text-align: left;
-  font-style: italic;
-  margin-bottom: 0.5em;
+	text-align: left;
+	font-style: italic;
+	margin-bottom: 0.5em;
 }
 
 tr:first-of-type th {
-  background-color: transparent;
-  border-bottom: 2px solid var(--color-gray-darkest);
+	background-color: transparent;
+	border-bottom: 2px solid var(--color-gray-darkest);
 }
 
 .night-mode tr:first-of-type th {
-  border-bottom: 2px solid var(--color-gray-brightest);
+	border-bottom: 2px solid var(--color-gray-brightest);
 }
 
 tr:nth-of-type(even) {
-  background-color: var(--color-gray-bright);
+	background-color: var(--color-gray-bright);
 }
 
 .night-mode tr:nth-of-type(even) {
-  background-color: var(--color-gray-dark);
+	background-color: var(--color-gray-dark);
 }
 
 th,
 td {
-  padding: 0.25rem 0.5rem 0.25rem 0;
+	padding: 0.25rem 0.75rem 0.25rem 0;
+	vertical-align: top;
 }
 
 th:last-of-type,
 td:last-of-type {
-  padding-right: 0;
+	padding-right: 0;
 }
 
 th {
-  font-weight: 700;
+	font-weight: 700;
 }
 
 /***************************************
@@ -686,30 +688,30 @@ th {
 ***************************************/
 
 figure {
-  margin: var(--margin-default);
-  page-break-inside: avoid;
-  page-break-after: avoid; /* Not supported by Webkit at time of writing, ref: https://bugs.webkit.org/show_bug.cgi?id=5097 */
+	margin: var(--margin-default);
+	page-break-inside: avoid;
+	page-break-after: avoid; /* Not supported by Webkit at time of writing, ref: https://bugs.webkit.org/show_bug.cgi?id=5097 */
 }
 
 img {
-  max-width: 100%;
-  overflow: hidden;
-  page-break-inside: avoid;
-  page-break-after: avoid; /* Not supported by Webkit at time of writing, ref: https://bugs.webkit.org/show_bug.cgi?id=5097 */
-  vertical-align: top;
+	max-width: 100%;
+	overflow: hidden;
+	page-break-inside: avoid;
+	page-break-after: avoid; /* Not supported by Webkit at time of writing, ref: https://bugs.webkit.org/show_bug.cgi?id=5097 */
+	vertical-align: top;
 }
 
 figure img {
-  display: block;
+	display: block;
 }
 
 figcaption {
-  font-style: italic;
-  margin-top: 0.5em;
+	font-style: italic;
+	margin-top: 0.5em;
 }
 
 @media screen and (min-width: 30rem) {
-  figcaption {
-    font-size: 0.75em;
-  }
+	figcaption {
+		font-size: 0.75em;
+	}
 }
